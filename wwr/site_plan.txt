@@ -1,0 +1,11 @@
+primary-color  prussian blue = 0B3954
+secondary-color teal = 087E8B
+accent1-color columbia blue = BFD7EA
+accent2-color bittersweet = FF5A5F
+
+heading-font   playfair display
+text-font   intel one mono
+
+colors:
+https://coolors.co/0b3954-087e8b-bfd7ea-ff5a5f
+
