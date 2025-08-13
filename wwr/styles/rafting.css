@@ -9,6 +9,10 @@
     --body-font: "Intel One Mono", intel-one-mono;
 }
 
+.logo {
+    margin-left: 20px;
+}
+
 header {
     background-color: var(--accent2-color);
     color: var(--primary-color);
