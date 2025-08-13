@@ -11,12 +11,13 @@
 
 .logo {
     margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 header {
     background-color: var(--accent2-color);
     color: var(--primary-color);
-
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
@@ -27,6 +28,7 @@ header {
 }
 
 .navigation {
+    text-align: center;
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
