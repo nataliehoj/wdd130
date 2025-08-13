@@ -101,5 +101,7 @@ h1 {
 
 .hero2 img {
     float: right;
-    width: 125px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 200px;
 }
