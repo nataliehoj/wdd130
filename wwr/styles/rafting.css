@@ -1,6 +1,47 @@
+@import url(https://fonts.google.com/specimen/Intel+One+Mono?query=intel+one);
+@import url(https://fonts.google.com/specimen/Playfair+Display);
+:root {
+    --primary-color: #0B3954; /*Prussian blue*/
+    --secondary-color: #087E8B; /*Teal*/
+    --accent1-color: #BFD7EA; /*Columbia blue*/
+    --accent2-color: #FF5A5F; /*Bittersweet*/
+    --heading-font: "Playfair Display", playfair-display;
+    --body-font: "Intel One Mono", intel-one-mono;
+}
+
 header {
-    background-color: #FF5A5F;
-    color: #FF5A5F
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+    
+}
+
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	font-family: var(--heading-font);
+}
+
+.navigation a {
+	display: block;
+	color: var(--primary-color);
+	padding: 20px;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.navigation a:hover {
+	color: var(--secondary-color);
+	font-weight: 700;
+	text-decoration: underline;
 }
 
 * {
@@ -10,8 +51,8 @@ header {
 }
 
 body {
-    font-family: var(playfair-display);
-    color:black
+    font-family: var(--body-font);
+    color: var(--primary-color)
 }
 
 header, main, footer {
@@ -20,8 +61,8 @@ header, main, footer {
 }
 
 h1, h2 {
-    font-family: var(intel-one-mono);
-    color: #0B3935;
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
 }
 
 nav, p, section, article {
@@ -33,20 +74,28 @@ nav, p, section, article {
     text-decoration: none;
 }
 
-.hero-image {
-    background-image: url("rafting14_1024.jpg");
-    background-color: #cccccc;
-    width: 800px;
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
     height: auto;
 }
 
-.hero-text {
+h1 {
     position: absolute;
-    top: 200px;
+    top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: #BFD7EA;
-    color: #fff;
+    background-color: var(--accent1-color);
+    color: black;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
 }
