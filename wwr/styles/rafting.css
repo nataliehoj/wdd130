@@ -165,7 +165,7 @@ nav, p, section, article {
 
 footer {
     background-color: var(--secondary-color);
-    color: #ccc;
+    color: var(--accent1-color);
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     padding: 10px;
@@ -238,4 +238,102 @@ css for contact us
 
 .employee:nth-last-of-type(3) {
     grid-column: 10/12;
+}
+/********
+css for home page
+********/
+
+.signup1 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.adslol {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.figcaption {
+    text-align: center;
+}
+
+.hero section {
+    position: absolute;
+    opacity: 0.9;
+    top: 10rem;
+    left: 2rem;
+    right: 2rem;
+    display: block;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 250px;
+    height: 75px;
+}
+
+.hero section a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    font-size: xx-large;
+    text-align: center;
+    padding: 0 5px;
+}
+
+/********
+css for trips page
+yes all of these are in german, i just copied them from a site i found online, so i don't own any of these descriptions, i just translated them to german.
+this is the site https://www.nwrafting.com/river-descriptions/worlds-13-legendary-river-trips
+********/
+
+.trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--accent1-color);
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.img1, .img3 {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/-1;
+}
+
+
+.img2 {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/-1;
+    flex-direction: row;
+}
+
+.img2 {
+    flex-direction: row-reverse;
+}
+
+.one, .two, .three {
+    color: var(--accent1-color);
+    margin: 0 20px;
+    text-align: justify;
+    flex: 1;
+}
+
+.im1 img, .img2 img, .img3 img {
+    max-width: 300px;
+    height: auto;
 }
