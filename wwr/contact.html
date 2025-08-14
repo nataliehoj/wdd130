@@ -3,41 +3,82 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta name="author" content="Natalie Hojnacke">
-
+        <meta name="author" content="Natalie Allison Hojnacke">
+        <title>Contact Us | Rafting Travel</title>
+        <meta name="description" content="How to contact rafting travel">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/rafting.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Playfair+Display">
-        <link rel="preconnect" href="https://fonts.google.com/specimen/Intel+One+Mono">
     </head>
     <body>
         <header>
             <img class="logo" src="images/z-raftingcompas.jpg" alt="Rafting Travel compass looking thing logo" width="100">
             <nav>
                 <ul class="navigation">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="trips.html">Trips</a>
-                    <a href="contact.html">Contact Us</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <div class="hero">
-                <img src="images/rafting14_1024.jpg" alt="people in raft lol">
-                <h1>Rafting Travel</h1>
-                <img class="hero2" src="images/rafting59_600.jpg" alt="the other one" width="200">
-            </div>
-            <section>
-                
+        <main class="contactus">
+            <form action="#" class="contactform">
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                    
+                    <label for="emailaddress">Email:</label>
+                    <input type="email" name="email" id="emailaddress" required>
+                </fieldset>
+                <fieldset class="radio-inputs">
+                    <input type="radio" id="general" name="gq" value="general" checked>
+                    <label for="general">General</label>
+
+                    <input type="radio" id="reservation" name="res" value="reservation">
+                    <label for="reservation">Reservation</label>
+
+                    <input type="radio" id="website" name="web" value="website">
+                    <label for="website">Website Suggestion</label>
+                </fieldset>
+                <fieldset>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </fieldset>
+                <div class="signup">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+            <section class="address">
+                <h2>Our Contact Info</h2>
+                <address>7890 Totally Legit Street<br>Nowhere, OH 78901</address>
+                <a href="tel:+1 444-888-8888">(444) 444-888-8888</a>
+                <a href="mailto:info@raftingtravel.com">info@raftingtravel.com</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2225.6984136095575!2d-111.57664287181001!3d40.35579460877617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1755199182995!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="gmap"></iframe>
             </section>
-            <section1>
-                <h2>Join Us On The Water!</h2>
-                <img src="images/rafting20_600.jpg" alt="oars" width="300">
-                <img src="images/rafting22_600.jpg" alt="helmets on raft" width="300">
-                <img src="images/rafting26_600.jpg" alt="rafts" width="300">
-                <img src="images/rafting53_600.jpg" alt="people on raft with oars" width="300">
-                <img src="images/rafting59_600.jpg" alt="people celebrating woooooo" width="300">
-            </section1>
+            <hr class="hrule">
+            <section class="employees">
+                <h2>Our Employees</h2>
+                <section class="employee">
+                <figure>
+                    <img src="images/smileylady.png" alt="employee 1" width="190">
+                    <figcaption>Jelena Vidyadhara, CEO</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/smileyman1.png" alt="employee 2" width="200">
+                    <figcaption>Jing Yuan, VP Sales</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/smileyman2.png" alt="employee 3" width="200">
+                    <figcaption>Sunday, Tour Guide</figcaption>
+                </figure>
+                </section>
+            </section>
         </main>
     </body>
     <footer>
@@ -50,7 +91,7 @@
                 <img src="images/twitter.png" alt="Twitter" width="25">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.png" width="25">
+                <img src="images/instagram.png" alt="Instagram" width="25">
             </a>
         </nav>
         
